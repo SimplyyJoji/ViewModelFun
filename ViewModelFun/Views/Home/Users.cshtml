@@ -8,28 +8,14 @@
 </head>
 <body>
 <div>
-<h1>Dojo Survey</h1>
-<form action="Results" method="post">
-  <label for="name">Name</label>
-  <input type="text" name="Name">
-  <label for="location" >Choose A Location</label>
-  <select name="Location">
-  <option value="San Jose">San Jose</option>
-  <option value="San Francisco">San Francisco</option>
-  <option value="Bellvue">Bellvue</option>
-  <option value="Irvine">Irvine</option>
-</select>
-  <label for="language" name="Language">Choose A Language</label>
-  <select name="Language">
-  <option value="C#">C#</option>
-  <option value="React">React</option>
-  <option value="Python">Python</option>
-  <option value="Java">Java</option>
-</select>
-    <textarea name="Comments" rows="4" cols="50" maxlength="200">
-</textarea>
-<button type="submit">Submit</button>
-</form>
+<h1>Users</h1>
+  @model string[]
+<h2>Here are some names!</h2>
+@foreach(var name in Model){
+    <p>@name</p>
+}
+
+
 </div>
 </body>
 </html>

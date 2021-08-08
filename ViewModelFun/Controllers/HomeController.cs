@@ -40,6 +40,7 @@ namespace HelloASP
         return View(names);
     }
 
+[HttpGet("numbers")]
   public IActionResult Numbers()
     {
         // to a View that has defined a model as @model string[]
